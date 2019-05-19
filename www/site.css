@@ -1,3 +1,4 @@
+/* Parallax from https://codepen.io/tribex/pen/mWNWdz*/
 /* Tiny reset thingy */
 body,html,div{margin:0;padding:0;}
 
@@ -35,9 +36,11 @@ img{
         width: 75%;
         height: 75%;
     }
-    img.small{
+    img.github{
         width: 10%;
         height: 10%;
+        vertical-align: middle;
+        padding-bottom: 12px;
     }
 
  .video-title{
