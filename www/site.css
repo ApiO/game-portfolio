@@ -21,14 +21,32 @@ body{
 img{
     width: 200px;
     height: 100px;
+    margin: 12px 22px 0 0;
 }
+    img:hover{
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
     img.logo{
         width: 16%;
-        height: 50%;       
+        height: 50%;
+        margin: 18px 4px 24px 4px;
+    }
+    img.medium{
+        width: 75%;
+        height: 75%;
+    }
+    img.small{
+        width: 10%;
+        height: 10%;
     }
 
-ul{ display: inline;}
-li{ display: inline;}
+ .video-title{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+ul.inline, ul.inline li{ display: inline;}
 
 .section {
   /* Needed for children to be absolutely positioned relative to the parent. */
@@ -67,6 +85,7 @@ li{ display: inline;}
     background-color: rgba(42,42,42,0.48);
     padding: 8px 16px;
     border-radius: 2px;
+    width: 40%;
 }
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
@@ -82,20 +101,73 @@ li{ display: inline;}
     background-size: cover;
 }
 
-.bg2::after {
+div.content h1{
+    font-size: 64px;
+    margin-top: -48px;
 }
-.bg3::after {
-    background-color: aqua;
+
+.table{
+    display: contents;
 }
-.bg24::after {
-    background-color: blueviolet;
+
+.table-cell-left{
+    width: 654px;
+    margin-right: 48px;
 }
-.bg5::after {
-    background-color: brown;
+.table-cell-right{
+    text-align: center;
 }
-.bg6::after {
-    background-color: cornflowerblue;
+.table-cell, 
+.table-cell-right, 
+.table-cell-left{    
+    background-color: rgba(42,42,42,0.48);
+    padding: 8px 16px;
 }
+
+.bgMementoMori::after  {
+    background-image: url('docs/MementoMori/Village.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgNastyBubbly {
+    background-image: url('docs/NastyBubbly/12088-shot1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgClocky::after {
+    background-image: url('docs/Clocky/clocky2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgGonp {
+    background-image: url('docs/Gonp/gonp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgCliche::after {
+    background-image: url('docs/cliche/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 content .content{
     display: block;
+}
+
+a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+    a:hover{
+        color: chocolate;
+        text-decoration: underline;
+    }
+
+.footer{
+    background-color: #424242;
+}
+.sumimasen{
+    font-size: 10px;
+    font-style: italic;
+    margin-left: 8px;
 }
