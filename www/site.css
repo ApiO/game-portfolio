@@ -5,6 +5,7 @@ body,html,div{margin:0;padding:0;}
 body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-size: 1.2em;
+    background-color: #424242;
 }
 
 .wrapper {
@@ -20,16 +21,30 @@ body{
 }
 
 img{
-    width: 200px;
-    height: 100px;
+    width: 192px;
+    height: 96px;
     margin: 12px 22px 0 0;
 }
-    img:hover{
+    img{
         box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     }
     img.logo{
-        width: 16%;
-        height: 50%;
+        width: 144px;
+        height: 61px;
+        margin: 18px 4px 24px 4px;
+    }
+        img.logo.protogecko{
+            width: 63px;
+            height: 85px;
+        }
+        img.logo.cpp{
+            width: 65px;
+            height: 72px;
+            box-shadow: none;
+        }
+    img.logo80{
+        width: 80px;
+        height: 80px;
         margin: 18px 4px 24px 4px;
     }
     img.medium{
@@ -41,12 +56,17 @@ img{
         height: 10%;
         vertical-align: middle;
         padding-bottom: 12px;
+        box-shadow: none;
     }
 
  .video-title{
     font-weight: bold;
     text-decoration: underline;
     font-style: italic;
+}
+
+a img:hover{
+    box-shadow: 0 10px 16px 0 rgba(255, 255, 255, 0.1),0 6px 20px 0 rgba(255,255,255.09);
 }
 
 ul.inline, ul.inline li{ display: inline;}
@@ -106,7 +126,8 @@ ul.inline, ul.inline li{ display: inline;}
 
 div.content h1{
     font-size: 64px;
-    margin-top: -48px;
+    margin: -48px 0 0px 34px;
+    font-style: italic;
 }
 
 .table{
@@ -159,7 +180,6 @@ content .content{
 
 a{
     color: cornflowerblue;
-    text-decoration: none;
 }
     a:hover{
         color: chocolate;
@@ -167,6 +187,7 @@ a{
     }
 
 .footer{
+    height: 159px;
     background-color: #424242;
 }
 .sumimasen{
