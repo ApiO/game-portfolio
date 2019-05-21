@@ -65,11 +65,21 @@ img{
     font-style: italic;
 }
 
-a img:hover{
-    box-shadow: 0 10px 16px 0 rgba(255, 255, 255, 0.1),0 6px 20px 0 rgba(255,255,255.09);
+a{
+    color: #88b3ff;
 }
+    a:hover{
+        color: chocolate;
+        text-decoration: underline;
+    }
+    a img:hover{
+        box-shadow: 0 10px 16px 0 rgba(255, 255, 255, 0.1),0 6px 20px 0 rgba(255,255,255.09);
+    }
 
-ul.inline, ul.inline li{ display: inline;}
+ul.inline, 
+ul.inline li{
+    display: inline;
+}
 
 .section {
   /* Needed for children to be absolutely positioned relative to the parent. */
@@ -104,6 +114,31 @@ ul.inline, ul.inline li{ display: inline;}
   z-index: -1;
 }
 
+div.content h1{
+    font-size: 64px;
+    margin: -48px 0 0px 34px;
+    font-style: italic;
+}
+
+.table{
+    display: contents;
+}
+
+.table-cell-left{
+    width: 654px;
+    margin-right: 48px;
+}
+
+.table-cell-right{
+    text-align: center;
+}
+
+.table-cell, 
+.table-cell-right, 
+.table-cell-left{    
+    padding: 8px 16px;
+}
+
 .introduction{
     background-color: rgba(42,42,42,0.48);
     padding: 8px 16px;
@@ -124,37 +159,13 @@ ul.inline, ul.inline li{ display: inline;}
     background-size: cover;
 }
 
-div.content h1{
-    font-size: 64px;
-    margin: -48px 0 0px 34px;
-    font-style: italic;
-}
-
-.table{
-    display: contents;
-}
-
-.table-cell-left{
-    width: 654px;
-    margin-right: 48px;
-}
-.table-cell-right{
-    text-align: center;
-}
-.table-cell, 
-.table-cell-right, 
-.table-cell-left{    
-    background-color: rgba(42,42,42,0.48);
-    padding: 8px 16px;
-}
-
 .bgMementoMori::after  {
     background-image: url('docs/MementoMori/Village.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bgNastyBubbly {
-    background-image: url('docs/NastyBubbly/12088-shot1.jpg');
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.42)), url(docs/NastyBubbly/12088-shot1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -164,7 +175,7 @@ div.content h1{
     background-size: cover;
 }
 .bgGonp {
-    background-image: url('docs/Gonp/gonp.jpg');
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.9)), url('docs/Gonp/gonp.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -174,22 +185,21 @@ div.content h1{
     background-size: cover;
 }
 
+.bgMementoMori,
+.bgClocky,
+.bgCliche{
+    background-image: linear-gradient( to bottom, rgba(0,0,0,.2), rgba(0,0,0,.6));
+}
+
 content .content{
     display: block;
 }
-
-a{
-    color: cornflowerblue;
-}
-    a:hover{
-        color: chocolate;
-        text-decoration: underline;
-    }
 
 .footer{
     height: 159px;
     background-color: #424242;
 }
+
 .sumimasen{
     font-size: 10px;
     font-style: italic;
