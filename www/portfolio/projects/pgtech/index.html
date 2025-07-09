@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="ac web, acweb, personal website, adrien cuisinier, adrien, cuisinier">
+    <meta name="description" content="AC web - Personal and technical website of Adrien Cuisinier">
+    <meta name="author" content="Adrien Cuisinier">
+</head>
+<body>
+    <div id="body">
+		<section>
+			<div class="pgtech-menu">
+				<h1>pgtech</h1>
+				<ul>
+					<li><a href="#introduction">Introduction</a></li>
+					<li><a href="#license">License</a></li>
+					<li><a href="#demo">Demo</a></li>
+					<li><a href="#api">API</a></li>
+					<li><a href="#tools">Tools</a></li>
+					<li><a href="#workflow">Workflow</a></li>
+					<li><a href="#engine">Engine architecture</a></li>
+				</ul>
+			</div>
+
+			<h2>Introduction</h2>
+			<article id="introduction">
+				<p>Proto Gecko Technologies or pgtech is a game engine project which started in 2012 with a small team, a really small one in fact, as we were only two dudes involved. The main goal was to learn by ourselves how the video games are made in order to create our first game.</p>
+				<p>All I can say after two years is that this project was ridiculously ambitious and difficult. We have persevered however and we have now understood the complexity of each domain we came across, such as physics, animation, sound, graphics and so many others.</p>
+				<p>During this adventure we have learned a lot from the open source communities, bloggers and employees from huge companies. So thank you all. Without your generosity this project would have failed.</p>
+				<p>Now we have established a workflow, we have finished most of our planned tools and the game engine is functional. All of our work will be published shortly under a friendly open source licence, along with a full set of code samples and documentation.</p>
+				<p>In the meanwhile, here is first documentation of our work. I hope you will enjoy it.</p>
+			</article>
+
+			<h2>License</h2>
+			<article id="license">
+				<p>The zlib/libpng License</p>
+				<p>Copyright © 2012 - 2014 Mathieu Capdegelle, Adrien Cuisinier</p>
+				<p>Copyright © 2014 Adrien Cuisinier</p>
+				<p>This software is provided ‘as-is’, without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.</p>
+				<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+				<p>1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.</p>
+				<p>2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</p>
+				<p>3. This notice may not be removed or altered from any source distribution.</p>
+			</article>
+
+			<h2>Demo</h2>
+			<article id="demo">
+				<iframe width="853" height="480" src="//www.youtube.com/embed/C-mqup2MC7w?list=PLk1kRWgchcuZAb91jy1685TO_RXpaFn_2" allowfullscreen></iframe>
+
+				<p>Built from parts of our sandbox as a standalone win32 app.</p>
+				<a href="http://acuisinier.com/projects/pgtech/docs/pgtech%20demo.zip">Download demo</a>
+			</article>
+
+			<h2>API</h2>
+			<article id="api">
+				<p>The pgtech API was designed to be as simple as non-intrusive. There are no system dependencies and no useless libraries. This is pure c-style code, only with functions, basic types and without object.</p>
+				<p>Gameplay can be coded by simply including pge.h.</p>
+				<p>It is planned to publish the engine with a scripting layer using Angelscript, and to publish a c wrapper as well.</p>
+				<p>As for now, here comes the first version.</p>
+				<a href="http://acuisinier.com/projects/pgtech/docs/pgtech%20headers.zip">Download headers</a>
+			</article>
+
+			<h2>Tools</h2>
+			<article id="tools">
+				<p class="error">-Beeing written-</p>
+				<ul>
+					<li><a href="#tool_center">Tool Center</a></li>
+					<li><a href="#compil_srv">Compile server</a></li>
+					<li><a href="#lvl_edit">Level editor</a></li>
+					<li><a href="#link_chk">Linkage checker</a></li>
+					<li><a href="#cnt_brws">Content browser</a></li>
+					<li><a href="#chr_str">Search string</a></li>
+					<li><a href="#phys_mng">Physics managmer</a></li>
+					<li><a href="#spine_imp">Spine importer</a></li>
+				</ul>
+
+				<p>Some screenshots of our tools. Descriptions will be written soon.</p>
+
+				<h3>Tool center</h3>
+				<div id="tool_center" class="paragraph">
+					<a href="projects/pgtech/docs/tool.center.jpg"><img src="projects/pgtech/docs/tool.center.jpg" width="700" height="394" alt="" /></a>
+					<p class="legend">Tool center UI</p>
+				</div>
+
+				<h3>Compile server</h3>
+				<div id="compil_srv" class="paragraph">
+					<img src="projects/pgtech/docs/compile.server.jpg" width="659" height="620" alt="" />
+					<p class="legend">Compile server console</p>
+				</div>
+
+				<h3>Level editor</h3>
+				<div id="lvl_edit" class="paragraph">
+					<a href="projects/pgtech/docs/level.editor.0.jpg"><img src="projects/pgtech/docs/level.editor.0.jpg" width="621" height="361" alt="" /></a>
+					<p class="legend">Level editor screenshot</p>
+
+					<a href="projects/pgtech/docs/level.editor.1.jpg"><img src="projects/pgtech/docs/level.editor.1.jpg" width="621" height="361" alt="" /></a>
+					<p class="legend">Level editor screenshot</p>
+
+					<a href="projects/pgtech/docs/level.editor.2.jpg"><img src="projects/pgtech/docs/level.editor.2.jpg" width="621" height="361" alt="" /></a>
+					<p class="legend">Level editor screenshot</p>
+				</div>
+
+				<h3>Linkage checker</h3>
+				<div id="link_chk" class="paragraph">
+					<img src="projects/pgtech/docs/linkage.checker.jpg" width="750" height="350" alt="" />
+					<p class="legend">Linkage checker report</p>
+				</div>
+
+				<h3>Content browser</h3>
+				<div id="cnt_brws" class="paragraph">
+					<img src="projects/pgtech/docs/content.browser.jpg" width="700" height="630" alt="" />
+					<p class="legend">Content browser output</p>
+				</div>
+
+				<h3>Search string</h3>
+				<div id="chr_str" class="paragraph">
+					<img src="projects/pgtech/docs/search.string.jpg" width="800" height="800" alt="" />
+					<p class="legend">Search string output</p>
+				</div>
+
+				<h3>Physics manager</h3>
+				<div id="phys_mng" class="paragraph">
+					<a href="projects/pgtech/docs/physics.png"><img src="projects/pgtech/docs/physics.png" width="717" height="308" alt="physics manager" /></a>
+					<p class="legend">Physics manager</p>
+				</div>
+
+				<h3>Spine importer</h3>
+				<div id="spine_imp" class="paragraph">
+					<img src="projects/pgtech/docs/spine_importer.png" width="691" height="420" alt="Spine importer" />
+					<p class="legend">Spine importer</p>
+				</div>
+
+			</article>
+
+			<h2>Engine architecture</h2>
+			<article id="engine">
+				<p class="error">-Beeing written-</p>
+
+				<ul>
+					<li><a href="#overview">Overview</a></li>
+					<li><a href="#_engine">Engine</a></li>
+					<li><a href="#compiler">Compiler</a></li>
+					<li><a href="#_tools">Tools</a></li>
+					<li><a href="#res_str">Resources structure</a></li>
+				</ul>
+
+				<h3>Overview</h3>
+				<div id="overview" class="paragraph">
+					<img src="projects/pgtech/docs/archi.global.jpg" alt=""/>
+					<p class="legend">Global view</p>
+					<p>Description published soon</p>
+				</div>
+
+				<h3>Engine</h3>
+				<div id="_engine" class="paragraph">
+					<img src="projects/pgtech/docs/archi.engine.jpg" alt="" />
+					<p class="legend">Zoom on the engine</p>
+					<p>Description published soon</p>
+				</div>
+
+				<h3>Resources</h3>
+				<div id="res_str" class="paragraph">
+					<p>Description published soon</p>
+				</div>
+
+				<h3>Compiler</h3>
+				<div id="compiler" class="paragraph">
+					<img src="projects/pgtech/docs/compilation.jpg" alt="" />
+					<p class="legend">Compilation</p>
+					<p>Description published soon</p>
+				</div>
+
+				<h3>Tools</h3>
+				<div id="_tools" class="paragraph">
+					<p class="legend">Zoom on the tools</p>
+					<p>Description published soon</p>
+				</div>
+
+
+			</article>
+
+			<h2>Workflow</h2>
+			<article id="workflow">
+				<img src="projects/pgtech/docs/Resource%20managment.png" alt="" />
+				<p>Published soon</p>
+			</article>
+
+		</section>
+</body>
+</html>

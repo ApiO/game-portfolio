@@ -156,45 +156,45 @@ div.content h1{
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
 .bg0::after {
-    background: url('docs/bg/zen.jpg');
+    background: url('rsx/bg/zen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bgRpg {
-    background-image: url('docs/rpg/rpg2.jpg');
+    background-image: url('projects/rpg/rpg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bgSnow {
-    background-image: url('docs/Snow/screen.jpg');
+    background-image: url('projects/Snow/screen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bgMementoMori::after  {
-    background-image: url('docs/MementoMori/Village.png');
+    background-image: url('projects/MementoMori/Village.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bgNastyBubbly {
-    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.42)), url(docs/NastyBubbly/12088-shot1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.42)), url(projects/NastyBubbly/12088-shot1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bgClocky::after {
-    background-image: url('docs/Clocky/clocky2.jpg');
+    background-image: url('projects/Clocky/clocky2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bgGonp {
-    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.9)), url('docs/Gonp/gonp.jpg');
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.9)), url('projects/Gonp/gonp.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bgCliche::after {
-    background-image: url('docs/cliche/maxresdefault.jpg') !important;
+    background-image: url('projects/cliche/maxresdefault.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
 }
