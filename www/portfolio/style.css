@@ -11,7 +11,7 @@ html {
 body{
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   background-color: #424242;
-  font-size: max(1vw, 12px);
+  /* font-size: max(.8vw, 12px); */
 }
 
 .footer{
@@ -76,7 +76,7 @@ div.center-content {
 }
 
 h1{
-  font-size: calc(16px + 4vw);
+  font-size: calc(16px + 2vw);
   margin: 0 0 0 4%;
   font-style: italic;
 }
@@ -158,6 +158,13 @@ img.github{
 .bg0 {
   display: flex !important;
   background: url('assets/bg/zen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/******** PROCEDURAL ********/
+.bgProcedural {
+  background-image: url('projects/procedural/procedural2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
