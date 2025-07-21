@@ -11,11 +11,11 @@
     <meta name="keywords" content="adrien cuisinier, bordeaux">
     <meta name="description" content="Personal game portfolio">
     <meta name="author" content="Adrien Cuisinier">
-    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav role="navigation">
-        <div id="menuToggle">            
+        <div id="menuToggle">
             <input type="checkbox" id="menuCheckbox" />
             
             <span></span>
@@ -35,8 +35,8 @@
     </nav>
 
     <main class="wrapper">
-        <section class="section parallax bg0">
-            <div class="content introduction">
+        <section class="bg0">
+            <div class="introduction">
                 <h1>Greetings!</h1>
                 <p>This page presents all the personal projects I have done in my free time (and there aren't that many)</p>
                 <p>It takes several weeks or months to produce something that, moreover, has the merit of existing. I hope that you will take as much pleasure in discovering all this as I had in making it all.</p>
@@ -48,197 +48,173 @@
             </div>
         </section>
 
-        <section class="section parallax bgRpg" id="rpg">
-            <div class="content table">
-                <div class="table-cell-left">
-                    <h1>RPG <span>(2021-2023)</span></h1>
-                    <ul class="inline">
-                        <li><img src="assets/logos/made-unity-antracit.jpg" class="logo"></li>
-                    </ul>    
-                    <p>Project using unity3D and POLYGON assets from <a href="https://syntystore.com/" title="Synty studio">Synty studio</a>. Started in the holy 2020, I wanted to implement all the core mechanics that glue a game application, so far I have achieved:<p>
-					<ul>
-						<li>The game save/load with world/player states.</li>
-						<li>Security around game saves and player at runtime.</li>
-						<li>Character customization.</li>
-						<li>Player with controller and animation system.</li>
-						<li>UI system, scaling with resolution and ratio.</li>
-						<li>Render pipeline, post processed effects, lights both GI & backed</li>
-						<li>Item managment:
-							<ul>
-								<li>Inventory system</li>
-								<li>Loot system</li>
-								<li>Db integration</li>
-							</ul>
-						</li>
-					</ul>
-                    <p>I plan to continue working on this project and will play with shadergraph for amazing effects or cinemachine because I love dolly cams and so much more...</p>
-                </div>
-                
-                <div class="table-cell-right">
-                    <div class="video-title">Footage of the actual version</div>
-                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/S2VehbaA3oY?si=FeO-edS64EksCrwR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        <section id="rpg" class="bgRpg" >
+            <div class="section-description">
+                <h1>RPG <span>(2021-2023)</span></h1>
+                <ul class="inline">
+                    <li><img src="assets/logos/made-unity-antracit.jpg" class="logo"></li>
+                </ul>    
+                <p>Project using unity3D and POLYGON assets from <a href="https://syntystore.com/" title="Synty studio">Synty studio</a>. Started in the holy 2020, I wanted to implement all the core mechanics that glue a game application, so far I have achieved:<p>
+                <ul>
+                    <li>Player with locomotion and animation system.</li>
+                    <li>Character customization.</li>
+                    <li>UI system, scaling with resolution and ratio.</li>
+                    <li>Render pipeline, post processed effects, lights both GI & backed</li>
+                    <li>Item managment:
+                        <ul>
+                            <li>Inventory system</li>
+                            <li>Loot system</li>
+                            <li>Db integration</li>
+                        </ul>
+                    </li>
+                    <li>The game save/load with world/player states.</li>
+                    <li>Security around game saves and player at runtime.</li>
+                </ul>
+                <p>I plan to continue working on this project and will play with shadergraph for amazing effects or cinemachine because I love dolly cams and so much more...</p>
+            </div>
+            <div class="center-content">
+                <p><iframe class="youtube-vid" src="https://www.youtube.com/embed/S2VehbaA3oY?si=FeO-edS64EksCrwR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            </div>
+        </section>
+
+        <section class="bgSnow" id="snow">
+            <div class="section-description">
+                <h1>Snow <span>(2019-2021)</span></h1>
+                <ul class="inline">
+                    <li><img src="assets/logos/made-unity-antracit.jpg" class="logo"></li>
+                </ul>
+                <p>Project using unity3D. Starting in early 2018 it was originaly a sub-project of a RPG. I needed to implement an archetype of "range dps" and somewhere I wanted to put some multiplayer to it. And here we go, a multiplayer game where we throw stuff : snowlballs time !</p>
+                <p>This project is now into the Lab of the APSIDE company. I was working with an awesome intern focused on building an on premise network solution with its toolkit. The game and the framework will hopefully soon be released as open source project.</p>
+                <p>
+                    <div>Before APSIDE integration:</div>
+                    <a href="projects/Snow/early/p0.png" target="_blank"><img src="projects/Snow/early/p0.png"></a>
+                    <a href="projects/Snow/early/p1.png" target="_blank"><img src="projects/Snow/early/p1.png"></a>
+                    <a href="projects/Snow/early/p2.png" target="_blank"><img src="projects/Snow/early/p2.png"></a>
+                </p>
+                <p>      
+                    <div>Technical target, which hasn't really changed by the way:</div>
+                    <a href="projects/Snow/Overall architecture.png" target="_blank" title="Overall architecture"><img src="projects/Snow/Overall architecture.png"></a>
+                    <a href="projects/Snow/client-server.archi.png" target="_blank" title="client-server.archi"><img src="projects/Snow/client-server.archi.png"></a>
+                </p>
+            </div>
+            <div class="center-content">
+                <div class="video-title">Footage of the actual version</div>
+                <p><iframe class="youtube-vid" src="https://www.youtube.com/embed/_TvdMDColjU?si=30EL460DF_I_xNgD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            </div>
+        </section>
+
+        <section class="bgMementoMori" id="mementomori">
+            <div class="section-description">
+                <h1>Memento Mori <span>(2012)</span></h1>
+
+                <ul class="inline">
+                    <li><img src="assets/logos/made-unity-antracit.jpg" class="logo"></li>
+                </ul>
+
+                <p>This is the previously mentioned RPG project.</p>
+                <p>Because I really love the RPG mecanics I have started to develop my own game to try every aspect.</p>
+                <p>To achieve this I work with an <a href="https://www.udemy.com/unityrpg" target="_blank">insane course from Udemy</a>, which website is actually my main source of knowledge right now.</p>
+                <p>
+                    <div>Project sketch, yes I'm a true artist!</div>
+                    <a href="projects/MementoMori/Village.png" target="_blank"><img src="projects/MementoMori/Village.png"></a>
+                    <a href="projects/MementoMori/Village2.png" target="_blank"><img src="projects/MementoMori/Village2.png"></a>
+                </p>
+            </div>
+            <div class="center-content">
+                <div class="video-title">Unity3D prototypes</div>
+                <p><iframe class="youtube-vid" src="https://www.youtube.com/embed/xFGogNy9iMs?si=rNiQvrEi20g2iC1D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            </div>
+        </section>
+
+        <section class="bgNastyBubbly" id="nastybubbly">
+            <div class="section-description">
+                <h1>Nasty Bubbly <span>(2012)</span></h1>
+                <ul class="inline">
+                    <li><img src="assets/logos/as3-2.jpg" class="logo80" title="Action script 3"></li>
+                    <li><img src="assets/logos/flashdevelop.png" class="logo80" title="Flash develop"></li>
+                </ul>
+                <p>This was quite a successful entry to Ludum Dare 21 for the 72H team JAM contest.</p>
+                <p>Controls</p>
+                <ul>
+                    <li>UP and DOWN Arrows: Move the fish well, up and down.</li>
+                    <li>SPACEBAR: Speed boost.</li>
+                </ul>
+                <p>The goal is to escape from the landing net to avoid being caught and consequently dying in excruciating suffering.</p>
+                <p>Use the boost to go faster and pollute the bowl by doing so, avoiding obstacles such as bubbles and pillars to win the game. The fish food increases your boost bar.</p>                
+                <p>Enjoy! And for the love of nature, save this goldfish's life ! It's only a matter of Karma.</p>                
+                <a href="https://github.com/ApiO/ld23-NastyBubbly" target="_blank">
+                    <img src="assets/logos/GitHub-Mark-Light-120px-plus.png" class="github">
+                    <span>See on GitHub</span>
+                </a>
+            
+            </div>
+            <div class="center-content">
+                <p><a href="projects/NastyBubbly/game/index.html" alt="Play the game">Play the game</a></p>
+                <p><a href="projects/NastyBubbly/game/index.html" alt="Play the game"><img src="projects/NastyBubbly/shot.jpg" class="full"></a></p>
+            </div>
+        </section>
+
+        <section class="bgClocky" id="clocky">
+            <div class="section-description">
+                <h1>Clocky <span>(2017)</span></h1>
+
+                <ul class="inline">
+                    <li><img src="assets/logos/protogecko.png" class="logo protogecko" title="Proto gecko"></li>
+                    <li><img src="assets/logos/cpp.png" class="logo cpp"></li>
+                </ul>
+
+                <p>Prototype of 2D/3D plateformer made with custom game engine.</p>
+                <div class="video-title">Footage of the actual version</div>
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/0FJ5b3ksR54?si=uYRtPsbtY9jirKmD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+                <div>
+                    <a href="https://github.com/ApiO/Clocky" target="_blank"><img src="assets/logos/GitHub-Mark-Light-120px-plus.png" class="github"></a>
+                    <a href="https://github.com/ApiO/Clocky" target="_blank"><span>See on GitHub</span></a>
                 </div>
             </div>
         </section>
 
-        <section class="section parallax bgSnow" id="snow">
-            <div class="content table">
-                <div class="table-cell-left">
-                    <h1>Snow <span>(2019-2021)</span></h1>
+        <section class="bgGonp" id="gomp">
+            <div class="section-description">
+                <h1>Gonp <span>(2019)</span></h1>
 
-                    <ul class="inline">
-                        <li><img src="assets/logos/made-unity-antracit.jpg" class="logo"></li>
-                    </ul>
-    
-                    <p>Project using unity3D. Starting in early 2018 it was originaly a sub-project of a RPG. I needed to implement an archetype of "range dps" and somewhere I wanted to put some multiplayer to it. And here we go, a multiplayer game where we throw stuff : snowlballs time !</p>
-                    <p>This project is now into the Lab of the APSIDE company. I was working with an awesome intern focused on building an on premise network solution with its toolkit. The game and the framework will hopefully soon be released as open source project.</p>
-                    <p>
-                        <div>Before APSIDE integration:</div>
-                        <a href="projects/Snow/early/p0.png" target="_blank"><img src="projects/Snow/early/p0.png"></a>
-                        <a href="projects/Snow/early/p1.png" target="_blank"><img src="projects/Snow/early/p1.png"></a>
-                        <a href="projects/Snow/early/p2.png" target="_blank"><img src="projects/Snow/early/p2.png"></a>
-                    </p>
-                    <p>      
-                        <div>Technical target, which hasn't really changed by the way:</div>
-                        <a href="projects/Snow/Overall architecture.png" target="_blank" title="Overall architecture"><img src="projects/Snow/Overall architecture.png"></a>
-                        <a href="projects/Snow/client-server.archi.png" target="_blank" title="client-server.archi"><img src="projects/Snow/client-server.archi.png"></a>
-                    </p>
+                <ul class="inline">
+                    <li><img src="assets/logos/protogecko.png" class="logo protogecko" title="Proto gecko"></li>
+                    <li><img src="assets/logos/cpp.png" class="logo cpp"></li>
+                </ul>
+
+                <p>This is a local, pong-like game with options. Each time a player looses the ball he gets a bonus. Each bonus has a unique effect, eg: changes the bar size, inverts screen or position, splits all balls on field, clears the field ...</p>
+                <p>This is a prototype made with custom game engine.</p>
+                <div>
+                    <a href="https://github.com/ApiO/Gonp" target="_blank"><img src="assets/logos/GitHub-Mark-Light-120px-plus.png" class="github"></a>
+                    <a href="https://github.com/ApiO/Gonp" target="_blank"><span>See on GitHub</span></a>
                 </div>
-                
-                <div class="table-cell-right">
-                    <div class="video-title">Footage of the actual version</div>
-                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/_TvdMDColjU?si=30EL460DF_I_xNgD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-                </div>
-                
+            </div>
+            <div class="center-content">
+                <div class="video-title">Footage of the actual version</div>
+                <p><iframe class="youtube-vid" src="https://www.youtube.com/embed/lJnJb5TKJRo?si=amBgpEln02r_z1sL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
             </div>
         </section>
 
-        <section class="section parallax bgMementoMori" id="mementomori">      
-            <div class="content table">
-                <div class="table-cell-left">
-                    <h1>Memento Mori <span>(2012)</span></h1>
+        <section class="bgCliche" id="cliche">
+            <div class="section-description">
+                <h1>Cliché <span>(2019)</span></h1>
 
-                    <ul class="inline">
-                        <li><img src="assets/logos/made-unity-antracit.jpg" class="logo"></li>
-                    </ul>
+                <ul class="inline">
+                    <li><img src="assets/logos/protogecko.png" class="logo protogecko" title="Proto gecko"></li>
+                    <li><img src="assets/logos/cpp.png" class="logo cpp"></li>
+                </ul>
 
-                    <p>This is the previously mentioned RPG project.</p>
-                    <p>Because I really love the RPG mecanics I have started to develop my own game to try every aspect.</p>
-                    <p>To achieve this I work with an <a href="https://www.udemy.com/unityrpg" target="_blank">insane course from Udemy</a>, which website is actually my main source of knowledge right now.</p>
-                    <p>
-                        <div>Project sketch, yes I'm a true artist!</div>
-                        <a href="projects/MementoMori/Village.png" target="_blank"><img src="projects/MementoMori/Village.png"></a>
-                        <a href="projects/MementoMori/Village2.png" target="_blank"><img src="projects/MementoMori/Village2.png"></a>
-                    </p>
-                </div>                
-                <div class="table-cell-right">
-                    <div class="video-title">Unity3D prototypes</div>
-                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/xFGogNy9iMs?si=rNiQvrEi20g2iC1D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+                <p></p>This was a pretty bad <a href="http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=12088">entry to the Ludum dare 30</a>, solo 48 Hour Compo.</p>        
+
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/gXQspCTgBkI?si=LJjN54Xq2cSaXohE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>                           
+                <div>
+                    <a href="https://github.com/ApiO/ld30-Cliche" target="_blank"><img src="assets/logos/GitHub-Mark-Light-120px-plus.png" class="github"></a>
+                    <a href="https://github.com/ApiO/ld30-Cliche" target="_blank"><span>See on GitHub</span></a>
                 </div>
             </div>
         </section>
 
-        <section class="section parallax bgNastyBubbly" id="nastybubbly">
-            <div class="content table">
-                <div class="table-cell-left">
-                    <h1>Nasty Bubbly <span>(2012)</span></h1>
-                    
-                    <ul class="inline">
-                        <li><img src="assets/logos/as3-2.jpg" class="logo80" title="Action script 3"></li>
-                        <li><img src="assets/logos/flashdevelop.png" class="logo80" title="Flash develop"></li>
-                    </ul>
-
-                    <p>This was quite a successful entry to Ludum Dare 21 for the 72H team JAM contest.</p>
-                    <p>Controls</p>
-                    <ul>
-                        <li>UP and DOWN Arrows: Move the fish well, up and down.</li>
-                        <li>SPACEBAR: Speed boost.</li>
-                    </ul>
-                    <p>The goal is to escape from the landing net to avoid being caught and consequently dying in excruciating suffering.</p>
-                    <p>Use the boost to go faster and pollute the bowl by doing so, avoiding obstacles such as bubbles and pillars to win the game. The fish food increases your boost bar.</p>
-                    
-                    <p>Enjoy! And for the love of nature, save this goldfish's life ! It's only a matter of Karma.</p>
-                    
-                    <a href="https://github.com/ApiO/ld23-NastyBubbly" target="_blank">
-                        <img src="assets/logos/GitHub-Mark-Light-120px-plus.png" class="github">
-                        <span>See on GitHub</span>
-                    </a>
-                
-                </div>                
-                <div class="table-cell-right">
-                    <p><a href="projects/NastyBubbly/game/index.html" alt="Play the game">Play the game</a></p>
-                    <p><a href="projects/NastyBubbly/game/index.html" alt="Play the game"><img src="projects/NastyBubbly/shot.jpg" class="full"></a></p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section parallax bgClocky" id="clocky">
-            <div class="content">
-                <div class="table-cell">
-                    <h1>Clocky <span>(2017)</span></h1>
-
-                    <ul class="inline">
-                        <li><img src="assets/logos/protogecko.png" class="logo protogecko" title="Proto gecko"></li>
-                        <li><img src="assets/logos/cpp.png" class="logo cpp"></li>
-                    </ul>
-
-                    <p>Prototype of 2D/3D plateformer made with custom game engine.</p>
-                    <div class="video-title">Footage of the actual version</div>
-                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/0FJ5b3ksR54?si=uYRtPsbtY9jirKmD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-                    <div>
-                            <a href="https://github.com/ApiO/Clocky" target="_blank"><img src="assets/logos/GitHub-Mark-Light-120px-plus.png" class="github"></a>
-                            <a href="https://github.com/ApiO/Clocky" target="_blank"><span>See on GitHub</span></a>
-                        </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section parallax bgGonp" id="gomp">
-            <div class="content table">
-                <div class="table-cell-left">
-                    <h1>Gonp <span>(2019)</span></h1>
-
-                    <ul class="inline">
-                        <li><img src="assets/logos/protogecko.png" class="logo protogecko" title="Proto gecko"></li>
-                        <li><img src="assets/logos/cpp.png" class="logo cpp"></li>
-                    </ul>
-
-                    <p>This is a local, pong-like game with options. Each time a player looses the ball he gets a bonus. Each bonus has a unique effect, eg: changes the bar size, inverts screen or position, splits all balls on field, clears the field ...</p>
-                    <p>This is a prototype made with custom game engine.</p>
-                    <div>
-                        <a href="https://github.com/ApiO/Gonp" target="_blank"><img src="assets/logos/GitHub-Mark-Light-120px-plus.png" class="github"></a>
-                        <a href="https://github.com/ApiO/Gonp" target="_blank"><span>See on GitHub</span></a>
-                    </div>
-                </div>                
-                <div class="table-cell-right">
-                    <div class="video-title">Footage of the actual version</div>
-                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/lJnJb5TKJRo?si=amBgpEln02r_z1sL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section parallax bgCliche" id="cliche">
-            <div class="content">
-                <div class="table-cell">
-                    <h1>Cliché <span>(2019)</span></h1>
-
-                    <ul class="inline">
-                        <li><img src="assets/logos/protogecko.png" class="logo protogecko" title="Proto gecko"></li>
-                        <li><img src="assets/logos/cpp.png" class="logo cpp"></li>
-                    </ul>
-
-                    <p></p>This was a pretty bad <a href="http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=12088">entry to the Ludum dare 30</a>, solo 48 Hour Compo.</p>        
-
-                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/gXQspCTgBkI?si=LJjN54Xq2cSaXohE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>                           
-                    <div>
-                        <a href="https://github.com/ApiO/ld30-Cliche" target="_blank"><img src="assets/logos/GitHub-Mark-Light-120px-plus.png" class="github"></a>
-                        <a href="https://github.com/ApiO/ld30-Cliche" target="_blank"><span>See on GitHub</span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section footer">Adrien Cuisinier &copy;2019-2025</section>
+        <section class="footer">Adrien Cuisinier &copy;2019-2025</section>
     </main>
 </body>
 </html>
